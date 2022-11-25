@@ -2,10 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter_application_1/screens/login.dart';
-import 'package:flutter_application_1/services/firebase_services.dart';
-import 'package:flutter_application_1/utils/bottom_nav.dart';
-import 'package:flutter_application_1/utils/routes.dart';
 
 class Inicio extends StatelessWidget {
   const Inicio({Key? key}) : super(key: key);
@@ -15,22 +11,34 @@ class Inicio extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.network(FirebaseAuth.instance.currentUser!.photoURL!),
-            SizedBox(
-              height: 20,
+            RichText(
+              text: TextSpan(
+                  text:
+                      ("\n\n\nBienvenido a la PokeApp\n \nUsuario:${FirebaseAuth.instance.currentUser!.displayName}"),
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 18.0,
+                  ),
+                  // ignore: prefer_const_literals_to_create_immutables
+                  children: <TextSpan>[
+                    TextSpan(
+                        text: "\n\n\n\n\nTexto informativo de aqui pa abajo",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 18.0,
+                        ))
+                  ]),
+              textAlign: TextAlign.center,
             ),
-            Text("${FirebaseAuth.instance.currentUser!.displayName}"),
-            Text("${FirebaseAuth.instance.currentUser!.email}"),
-            ElevatedButton(
-              onPressed: () async {
-                await FirebaseServices().signOut();
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => LoginScreen()));
-              },
-              child: Text("Cerrar Sesión"),
+            Image.asset(
+              "assets/images/pikachu.jpeg",
+              width: 200,
+              height: 200,
             ),
+            const SizedBox(
+              width: 10,
+            )
           ],
         ),
       ),
