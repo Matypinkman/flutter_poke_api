@@ -39,6 +39,9 @@ class _HomeScreenState extends State<HomeScreen> {
             Text(
                 "                                   PokeApp                       "),
             ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.black87,
+              ),
               onPressed: () async {
                 await FirebaseServices().signOut();
                 Navigator.push(context,
