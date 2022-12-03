@@ -50,6 +50,7 @@ void fetchPokeData(link, id) {
   http.get(url).then((value) {
     if (value.statusCode == 200) {
       var dataJson = jsonDecode(value.body);
+      print(dataJson['name']);
     }
   });
 }
