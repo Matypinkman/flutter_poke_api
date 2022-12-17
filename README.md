@@ -17,7 +17,7 @@ Se recomienda instalar las siguientes herramientas para la correcta ejecucion de
 
 ### Compilar
 
-Dentro de Visual Studio Code se realiza el debugging directamente desde "main.dart" archivo hubicado dentro de la carpeta "lib", para este punto ya es necesario tener instalado algun tipo de emulador para android de lo contrario no se podra ejecutar la aplicacion.
+Dentro de Visual Studio Code se realiza el debugging directamente desde "main.dart" archivo ubicado dentro de la carpeta "lib", para este punto ya es necesario tener instalado algun tipo de emulador para android de lo contrario no se podra ejecutar la aplicacion.
 
 En caso de que al abrir el repositorio en Visual Studio Code y se presente la siguiente notificación, seleccionar el boton "Run 'pub get'".
 
