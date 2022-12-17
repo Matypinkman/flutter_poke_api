@@ -1,16 +1,19 @@
-# flutter_application_1
+# PokeApp
 
-A new Flutter project.
+Proyecto creado en base a flutter, se consumio la "pokeapi" para obtener la informacion de los pokemones y utilizando "FireBase" se creo un login.
 
-## Getting Started
+## Compilación y Ejecución
 
-This project is a starting point for a Flutter application.
+### Recomendaciones 
 
-A few resources to get you started if this is your first Flutter project:
+Se recomienda instalar las siguientes herramientas para la correcta ejecucion de la app:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Visual Studio Code: IDE principal con el que fue creado el proyecto con gran integracion para Android Studio.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Android Studio: Necesario para las dependencias de la aplicación tambien dispones de un emulador para realizar pruebas a la App
+
+- LDPlaye9: Emulador de android utilizado por algunos integrantes del grupo por problemas con Android Studio, alternativa en caso de que existan problemas.
+
+### Compilar
+
+Dentro de Visual Studio Code se realiza el debugging directamente desde "main.dart" archivo hubicado dentro de la carpeta "lib", para este punto ya es necesario tener instalado algun tipo de emulador para android de lo contrario no se podra ejecutar la aplicacion.
