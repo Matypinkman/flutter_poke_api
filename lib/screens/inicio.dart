@@ -14,6 +14,11 @@ class Inicio extends StatelessWidget {
           Center(
             child: Column(
               children: [
+                Image.asset(
+                  "assets/images/utem.png",
+                  width: 500,
+                  height: 250,
+                ),
                 RichText(
                   text: TextSpan(
                       text:
@@ -26,7 +31,7 @@ class Inicio extends StatelessWidget {
                       children: <TextSpan>[
                         TextSpan(
                             text:
-                                "\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                "\n\n\n\n¡Toda la informacion de los Pokemones en una aplicacion! \nEsta aplicacion consume una API de Pokemon, que contiene la informacion de los Pokemones de todas las series.\n\n\n Este proyecto fue realizado por: \n- Matías Alarcón Guajardo \n-Ismael Jara Gutiérrez \n-Juan González Ponce \n-Karina Sánchez Grissel \n-Matías Silva Farías",
                             style: TextStyle(
                               color: Colors.black,
                               fontSize: 18.0,

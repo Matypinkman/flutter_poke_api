@@ -82,10 +82,10 @@ class _BusquedaState extends State<Busqueda> {
                               'Nombre: ${_pokemonInfo['name']}'),
                           Text(
                               style: TextStyle(fontSize: 25),
-                              'Altura: ${_pokemonInfo['height']}'),
+                              'Altura: ${_pokemonInfo['height']} '),
                           Text(
                               style: TextStyle(fontSize: 25),
-                              'Peso: ${_pokemonInfo['weight']}'),
+                              'Peso: ${_pokemonInfo['weight']} '),
                           Text(
                               style: TextStyle(fontSize: 25),
                               'Tipos: ${_pokemonInfo['types']?.map((type) => type['type']['name']).join(', ') ?? 'Sin tipos'}'),
